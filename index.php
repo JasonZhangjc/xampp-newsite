@@ -14,7 +14,7 @@
        -->
 
       <h1 class="text-center">Registration for ITHub</h1>
-
+      
       <!-- Can use method="get" to replace method="post" -->
       <form method="post" action="success.php">
             <div class="mb-3">
