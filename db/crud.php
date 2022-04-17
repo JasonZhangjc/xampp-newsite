@@ -12,7 +12,7 @@
 
         public function insert($fname, $lname, $dob, $email, $webpage, $phone, $specialty){
             try{
-                $sql = "INSERT INTO attendee VALUES (:fname, :lname, :dob, :email, :webpage, :phone, :specialty)";
+                $sql = "INSERT INTO attendee (firstname, lastname, dateofbirth, emailaddress, webpage, contactnumber, specialty_id) VALUES (:fname, :lname, :dob, :email, :webpage, :phone, :specialty)";
                 $stmt = $this -> db -> prepare($sql);
 
                 $stmt -> bindparam(':fname', $fname);
@@ -23,7 +23,7 @@
                 $stmt -> bindparam(':phone', $phone);
                 $stmt -> bindparam(':specialty', $specialty);
 
-                $stmt -> execuute();
+                $stmt -> execute();
                 return true;
 
             } catch(PDOException $e) {

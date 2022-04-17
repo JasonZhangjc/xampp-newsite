@@ -33,7 +33,7 @@
                   <label for="specialty" class="form-label">Area of Expertise</label>
                   <input class="form-control" list="datalistOptions" id="specialty" name="specialty" placeholder="Type to search...">
                   <datalist id="datalistOptions">
-                        <option value="Database">
+                        <option value="1">Database</option>
                         <option value="Network">
                         <option value="Software">
                         <option value="Web">

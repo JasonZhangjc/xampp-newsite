@@ -6,13 +6,24 @@
     if(isset($_POST['submit'])){
         // extract values from the $_POST array  
         $fname = $_POST['firstname'];
-
+        $lname = $_POST['lastname'];
+        $dob = $_POST['dob'];
+        $email = $_POST['exampleInputEmail1'];
+        $webpage = $_POST['webpage'];
+        $phone = $_POST['phone'];
+        $specialty = $_POST['specialty'];
         // Call function to insert and track if success or not
         $isSuccess = $crud -> insert($fname, $lname, $dob, $email, $webpage, $phone, $specialty);
+
+        if($isSuccess){
+            echo '<h1 class="text-center text-success">You Have Been Registered!<h1>';
+        } else {
+            echo '<h1 class="text-center text-danger">There was an error in processing!<h1>';
+        }
     }
 ?>
 
-    <h1 class="text-center text-success">You Have Been Registered! </h1>
+    <!-- <h1 class="text-center text-success">You Have Been Registered! </h1> -->
 
     <!-- Can use $_GET to replace $_POST  -->
     <div class="card" style="width: 20rem;">
