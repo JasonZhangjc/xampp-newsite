@@ -13,7 +13,7 @@
         $phone = $_POST['phone'];
         $specialty = $_POST['specialty'];
         // Call function to insert and track if success or not
-        $isSuccess = $crud -> insert($fname, $lname, $dob, $email, $webpage, $phone, $specialty);
+        $isSuccess = $crud -> insertAttendees($fname, $lname, $dob, $email, $webpage, $phone, $specialty);
 
         if($isSuccess){
             echo '<h1 class="text-center text-success">You Have Been Registered!<h1>';
