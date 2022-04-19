@@ -1,2 +1,2 @@
 # xampp-newsite
- A website developed by PHP with XAMPP, deployed on HEROKU.
+ A website developed by PHP with XAMPP, will be deployed on HEROKU.
