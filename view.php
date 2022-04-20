@@ -13,6 +13,8 @@
         
 ?>
 
+<img src="<?php echo empty($result['avatar_path']) ? "uploads/78584.jpg" : $result['avatar_path']; ?>" class="rounded-circle" style="width: 25%; height: 25%" />
+
 <div class="card" style="width: 20rem;">
     <div class="card-body">
         <h5 class="card-title">

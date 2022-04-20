@@ -19,7 +19,7 @@
       <h1 class="text-center">Registration for ITHub</h1>
       
       <!-- Can use method="get" to replace method="post" -->
-      <form method="post" action="success.php">
+      <form method="post" enctype="multipart/form-data" action="success.php">
             <div class="mb-3">
                   <label for="firstname" class="form-label">First Name</label>
                   <input required type="text" class="form-control" id="firstname" name="firstname">
@@ -64,6 +64,13 @@
                   <input type="text" class="form-control" id="phone" name="phone" aria-describedby="phoneHelp">
                   <div id="phoneHelp" class="form-text">We'll never share your phone number with anyone else.</div>
             </div>
+            <br/>
+            <div class="custom-file">
+                  <label for="avatar" class="form-label">Upload Image (Optional)</label>
+                  <input type="file" accept="image/*" class="custom-file-input" id="avatar" name="avatar" >
+                  <!-- <label class="custom-file-label" for="avatar">Choose File</label> -->
+                  <div id="avatar" class="form-text text-danger">File Upload is Optional</div>
+            </div>
             
             <br>
             <button type="submit" name="submit" class="btn btn-primary" style="height:60px; width:1298px">Submit</button>
@@ -73,7 +80,6 @@
 <br>
 <br>
 <br>
-
 <?php require_once 'includes/footer.php'; ?>
 
     
